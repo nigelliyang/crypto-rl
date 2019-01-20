@@ -1,13 +1,13 @@
-from simulator import Simulator
+from .simulator import Simulator
 from configurations.configs import TIMEZONE
 from datetime import datetime as dt
 import pandas as pd
 
 
 query = {
-    'ccy': ['ETH-USD', 'tETHUSD'],
+    'ccy': ['BTC-USD', 'tBTCUSD'],
     'start_date': 20181120,
-    'end_date': 20181121
+    'end_date': 20190121
 }
 
 

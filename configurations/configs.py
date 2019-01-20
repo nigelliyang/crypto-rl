@@ -7,7 +7,8 @@ BASKET = [('BTC-USD', 'tBTCUSD'),
           #('ETH-USD', 'tETHUSD'),
           #('LTC-USD', 'tLTCUSD'),
           #('BCH-USD', 'tBCHUSD'),
-          ('ETC-USD', 'tETCUSD')]
+          #('ETC-USD', 'tETCUSD')
+          ]
 
 
 # ./connector_components/client.py
@@ -22,7 +23,7 @@ MAX_BOOK_ROWS = 15
 
 # ./connector_components/database.py
 BATCH_SIZE = 100000
-RECORD_DATA = False
+RECORD_DATA = True
 MONGO_ENDPOINT = 'localhost'
 ARCTIC_NAME = 'crypto.tickstore'
 
