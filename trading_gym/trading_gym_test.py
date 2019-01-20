@@ -1,6 +1,6 @@
 import numpy as np
 from datetime import datetime as dt
-from trading_gym import TradingGym
+from trading_gym.trading_gyms import TradingGym
 
 
 if __name__ == '__main__':

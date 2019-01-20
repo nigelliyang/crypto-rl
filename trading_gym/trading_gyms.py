@@ -1,13 +1,14 @@
-from gym import Env, spaces
-from gym.utils import seeding
-from .simulator import Simulator as Sim
-from .broker import Broker, Order
 import logging
-import numpy as np
 import os
 
-import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from gym import Env, spaces
+from gym.utils import seeding
+
+from trading_gym.broker import Broker, Order
+from trading_gym.simulator import Simulator as Sim
 
 
 class TradingGym(Env):
@@ -219,3 +220,4 @@ class TradingGym(Env):
 
     def _create_action_features(self, action):
         return np.array(self.actions[action][1:])
+

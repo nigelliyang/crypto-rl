@@ -1,4 +1,4 @@
-from broker import Broker
+from trading_gym.broker import Broker
 
 
 def test_case_one():

@@ -6,7 +6,7 @@ from rl.agents.dqn import DQNAgent
 from rl.memory import SequentialMemory
 from rl.callbacks import FileLogger, ModelIntervalCheckpoint
 
-from .trading_gym import TradingGym
+from trading_gym.trading_gyms import TradingGym
 
 
 class DqnAgent(TradingGym):
