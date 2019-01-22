@@ -144,7 +144,7 @@ class PositionI(object):
 class Broker(object):
     '''
     Broker class is a wrapper for the PositionI class
-    and is implemented in `trading_gym.py`
+    and is implemented in `trading_gyms.py`
     '''
     def __init__(self, max_position=1):
         self.long_inventory = PositionI(side='long', max_position=max_position)

@@ -1,7 +1,7 @@
 from gym import Env, spaces
 from gym.utils import seeding
-from .simulator import Simulator as Sim
-from .broker import Broker, Order
+from trading_gym.simulator import Simulator as Sim
+from trading_gym.broker import Broker, Order
 import logging
 import numpy as np
 import os

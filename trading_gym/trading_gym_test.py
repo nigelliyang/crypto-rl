@@ -1,8 +1,6 @@
 import numpy as np
 from datetime import datetime as dt
-from trading_gym import TradingGym
-
-
+from trading_gym.trading_gyms import TradingGym
 if __name__ == '__main__':
     start_time = dt.now()
 
@@ -16,6 +14,7 @@ if __name__ == '__main__':
         'testing_file': 'BTC-USD_20181121.xz'
     }
     total_reward = 0.0
+
     env = TradingGym(**params)
 
     for i in range(env.data.shape[0] - 5):

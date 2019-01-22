@@ -72,6 +72,7 @@ class Recorder(Process):
 
         if coinbaseClient.book.done_warming_up() & bitfinexClient.book.done_warming_up():
             print('%s >> %s' % (coinbaseClient.sym, coinbaseClient.book))
+            print('75 line...')
         else:
             if coinbaseClient.book.done_warming_up():
                 print('Coinbase - %s is warming up' % coinbaseClient.sym)

@@ -1,4 +1,4 @@
-from simulator import Simulator
+from trading_gym.simulator import Simulator
 from configurations.configs import TIMEZONE
 from datetime import datetime as dt
 import pandas as pd
