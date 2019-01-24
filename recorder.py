@@ -72,7 +72,6 @@ class Recorder(Process):
 
         if coinbaseClient.book.done_warming_up() & bitfinexClient.book.done_warming_up():
             print('%s >> %s' % (coinbaseClient.sym, coinbaseClient.book))
-            print('75 line...')
         else:
             if coinbaseClient.book.done_warming_up():
                 print('Coinbase - %s is warming up' % coinbaseClient.sym)
@@ -84,7 +83,7 @@ def main():
     for coinbase, bitfinex in BASKET:
         Recorder((coinbase, bitfinex)).start()
         print('\nProcess started up for %s' % coinbase)
-        time.sleep(9)
+        time.sleep(30)
 
 
 if __name__ == "__main__":
